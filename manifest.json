@@ -1,0 +1,26 @@
+{
+  "name": "デート割り勘アプリ",
+  "short_name": "デート割り勘アプリ",
+  "description": "ふたりのデート代を記録・精算するアプリ",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#121018",
+  "theme_color": "#17151f",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,5 +1,13 @@
 "use strict";
 
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js").catch((error) => {
+      console.warn("Service Workerの登録に失敗しました。", error);
+    });
+  });
+}
+
 const STORAGE_KEYS = {
   expenses: "dateExpenses.expenses.v1",
   settlements: "dateExpenses.settlements.v1",
