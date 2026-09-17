@@ -102,8 +102,27 @@ button:disabled { cursor: wait; filter: grayscale(.25); opacity: .65; }
   .app-header { padding-bottom: 21px; }
   .card { padding: 17px; border-radius: 18px; }
   .month-nav { padding: 9px; }
-  .form-grid { grid-template-columns: 1fr; }
+  .form-grid { width: 100%; max-width: 100%; min-width: 0; grid-template-columns: minmax(0, 1fr); }
+  .field { width: 100%; max-width: 100%; min-width: 0; }
   .field-wide { grid-column: auto; }
+  .date-field { overflow: hidden; }
+  .date-field input[type="date"] {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    inline-size: 100%;
+    max-inline-size: 100%;
+    min-inline-size: 0;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .date-field input[type="date"]::-webkit-date-and-time-value,
+  .date-field input[type="date"]::-webkit-datetime-edit {
+    min-width: 0;
+    max-width: 100%;
+  }
   .history-main { gap: 8px; }
   .backup-actions { grid-template-columns: 1fr; }
 }
