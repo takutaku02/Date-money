@@ -64,6 +64,7 @@ h2 { margin-bottom: 0; font-size: 1.2rem; }
 .field-wide { grid-column: 1 / -1; }
 label { display: block; margin-bottom: 6px; color: #dcd6e3; font-size: .84rem; font-weight: 650; }
 input, select { width: 100%; min-height: 48px; padding: 11px 12px; border: 1px solid var(--line); border-radius: 12px; outline: none; background: #17151e; color: var(--text); }
+input[type="date"] { box-sizing: border-box; width: 100%; max-width: 100%; min-width: 0; }
 input:focus, select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(255,121,159,.14); }
 .amount-input { position: relative; }
 .amount-input span { position: absolute; z-index: 1; top: 50%; left: 13px; transform: translateY(-50%); color: var(--muted); }
